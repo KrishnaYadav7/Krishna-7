@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding:  0;
+    font-family: "Poppins",  sans-serif;
+    box-sizing:  border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+
+
+}
+#header{
+   
+    height: 100%;
+    
+    
+    background: fixed;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#header::before {
+    content: "";
+    background-image: url("kri.png"); /* Replace with your image URL */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust the size as needed */
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: -1; 
+}
+.container{
+    padding:10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+
+
+}
+nav ul li  a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+
+}
+nav ul li  a::after {
+    content: " ";
+    width: 100%;
+    height:3px;
+    background:#ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+
+}
+nav  ul li a:hover::after {
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text  h1{
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+/*--------------About-----------*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#about {
+    flex-basis: 100%; 
+    max-width: 100%;
+}
+.about-col-1{
+    flex-basis: 60%;
+    font-size: 18px;
+    
+
+}
+.about-col-2{
+    max-width: 30px 0;
+    flex-grow: 1 ;
+    border-left: 1px solid #ddd;
+    height: auto;
+    border-radius: 15px;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+.tab-title{
+    display:flex;
+    margin: 20px 0 40px;
+}
+.tab-link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-link.active-link::after{
+    width: 50%;
+
+}
+.tab-contants ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contants ul li span{
+    color: #0051ff;
+    font-size: 25px;
+}
+.tab-contants{
+    display: none;
+}
+.tab-contants.active-tab{
+    display: block;
+
+}
+/*-----------------services------------------*/
+#services{
+    padding: 30px 0;
+
+}
+.Services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.Services-list div {
+    background: #4e5769;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.Services-list div i{
+    font-size: 50px;
+    margin-top: 30px;
+}
+.Services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.Services-list div a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.Services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px); 
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PERSONAL PORTFOLIO </title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/c6991caaf6.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+    <div id="header">
+        <div class="container"></div>
+        <nav>
+          <img src="download.png" alt="LOGO" height="8%" width="10%"/>
+          <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+
+        </nav>
+        <div class="header-text" >
+          <p>UI/UX DESIGNER</p>
+          <h1>Hi, I'm <span>Krishna</span> <br> From Nepal</h1>
+        </div>
+    </div>
+<!---------------------About------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          
+          <div class="about-col-1">
+            <h1 class="sub-title">ABOUT ME</h1>
+            <p1>
+              Hello! I’m Krishna Yadav, a passionate Computer Science Engineering student.
+              Currently studying at Parul University. 
+              My journey into the world of programming began with curiosity and a desire to create meaningful digital experiences. 
+            </p1>
+            <div class="tab-title">
+              <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-link" onclick="opentab('experiences')">Experiences</p>
+              <p class="tab-link" onclick="opentab('educations')">Educations</p>
+             
+            
+            </div>
+            <div class="tab-contants active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing web /App interfaces</li>
+                <li><span>Frontend Development</span><br>HTML, CSS, and JavaScript</li>
+                <li><span>Problem Solver/Coding/Programming Langauge</span><br>Python/Java/c++/Javascript</li>
+              </ul>
+            </div>
+            <div class="tab-contants" id="experiences">
+              <ul>
+                <li><span>Freasher </span><br>no experiences at  the moment.</li>
+              
+              </ul>
+            </div>
+            <div class="tab-contants" id="educations">
+              <ul>
+                <li><span>2019 </span><br>Completed secondary higher level educations in sciences from Tilottama campus,Butwal,Nepal.</li>
+                <li><span>2021-2025 </span><br>Completed B.Tech  in CSE from Parul University.</li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="about-col-2">
+            <img src="background.png" alt="ME" height="450px" width="375px"/>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-----------------------SERVICES-------- -->
+<div id="services">
+  <div class="container"> 
+    <h1 class="sub-title">My Services</h1>
+    <div class="Services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>I design a website for your business or personal project with user experience in mind. I use HTML, CSS, and JavaScript to create an interactive
+            I design responsive websites that are easy to use on all devices. I   can create a website for you with custom designs or
+            I design a website according to your business needs. I use HTML,CSS for front end development and PHP or NodeJS for
+            I design a website that is user friendly and visually appealing. I use HTML,CSS to create the layout of the
+            
+          </p> 
+          <a href="#">learn more</a>
+       
+       
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>App Design</h2>
+        <p> Avoid unnecessary elements that might overwhelm users.Use a limited color palette and legible typefaces
+          Ensure text contrasts well with the background.Create an intuitive navigation menu. Users should easily find what they’re looking for.
+          Implement breadcrumbs and clear call-to-action buttons.
+          </p> 
+          <a href="#">learn more</a>
+       
+       
+      </div>
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Programming</h2>
+        <p>  Avoid single-letter or cryptic names. Clear names improve code understanding.
+          add comments to explain complex logic, algorithms, or any non-obvious parts of your code. 
+          Comments help other developers (and your future self) understand your intentions.
+          Remember, writing good code now will save you time during code reviews, testing, and future maintenance.
+           Happy coding!
+          </p> 
+          <a href="#">learn more</a>
+       
+       
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <script>
+      function opentab(tabname) {
+          const allTabs = document.getElementsByClassName("tab-contants");
+          for (const tab of allTabs) {
+              tab.style.display = "none";
+          }
+          document.getElementById(tabname).style.display = "block";
+      }
+  </script>
+
+
+</body>
+
+
+</html>
